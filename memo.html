@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  <style>
+    body{margin: 0 aoto;}
+    .wrap{display: block;width: 80px;height: 80px;background-color: #ccc;position: relative;}
+    .wrap .box{display:block;}
+    .wrap .box:before{display:block;width:50px;height:50px;background-image: url(/img//icon.png);background-repeat: no-repeat;background-size: contain;background-position: center center; content: '';position: absolute;top: 50%;left: 50%;transform: translate(-50% ,-50%);}
+
+    .wrap2{display: block;width: 80px;height: 80px;background-color: #ccc;position: relative;}
+    .wrap2 .box2{display:block;}
+    /* .wrap2 .box2:before{display:block;width:16px;height:16px;background-image: url(/img/ic_calender_down.png);background-repeat: no-repeat;background-size: contain;background-position: center center; content: '';position: absolute;top: 50%;left: 50%;transform:translateX(-50%) translateX(+1px) translateY(-50%) translateY(+1px);} */
+    .wrap2 .box2:before{display:block;width:49px;height:49px;background-image: url(/img/icon.png);background-repeat: no-repeat;background-size: contain;background-position: center center; content: '';position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%) translate(-0.5px, -0.5px);}
+    .wrap3{display: block;width: 80px;height: 80px;background-color: #ccc;position: relative;}
+    .wrap3 .box3{display:block;}
+    /* .wrap2 .box2:before{display:block;width:16px;height:16px;background-image: url(/img/ic_calender_down.png);background-repeat: no-repeat;background-size: contain;background-position: center center; content: '';position: absolute;top: 50%;left: 50%;transform:translateX(-50%) translateX(+1px) translateY(-50%) translateY(+1px);} */
+    .wrap3 .box3:before{display:block;width:50px;height:50px;background-image: url(/img/icon.png);background-repeat: no-repeat;background-size: contain;background-position: center center; content: '';position: absolute;top: calc(50% - 25px);left:calc(50% - 25px);}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box"></div>
+  </div>
+  <div class="wrap2">
+    <div class="box2"></div>
+  </div>
+  <div class="wrap3">
+    <div class="box3"></div>
+  </div>
+</body>
+</html>
